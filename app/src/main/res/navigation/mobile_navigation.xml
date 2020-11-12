@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Monitoring">
+
+    <fragment
+        android:id="@+id/navigation_Monitoring"
+        android:name="com.fadli.smartlighting.ui.home.HomeFragment"
+        android:label="@string/title_Monitoring"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_Mapping"
+        android:name="com.fadli.smartlighting.ui.dashboard.DashboardFragment"
+        android:label="@string/title_Mapping"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_Controlling"
+        android:name="com.fadli.smartlighting.ui.notifications.NotificationsFragment"
+        android:label="@string/title_Controlling"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
